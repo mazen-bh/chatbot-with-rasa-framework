@@ -1,0 +1,660 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_what_are_you
+  examples: |
+    - What is your name?
+    - what are you?
+    - who are you?
+    - your name pls?
+    
+- intent: ask_thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - That's helpful
+    - Awesome, thanks
+    - Thanks for helping me
+
+- intent: ask_options
+  examples: |
+    - How can you help me?hi
+    - What can you do?
+    - What help you provide?
+    - How can you be helpful?
+    - What support do you offer
+    - What do you know?
+    - what help?
+    - What are you about?
+
+- intent: ask_empty_elemnt
+  examples: |
+    - what do we call an element without a closing tag
+    - what can we call an element that does not have a closing tag
+    - what do you call an element without a closing tag
+    - what is an element that does not have a closing tag called
+
+- intent: ask_closing_element
+  examples: |
+    - what do you call an element that have a closing tag 
+    - what is an element that has a closing tag called
+    - what are elements that contain closing tags called
+    - what do you call an element with a cloding tag
+    - what can we call an element that have a closing tag
+
+- intent: ask_closing_opening_tag
+  examples: |
+    - what is the difference between a closing and an opening tag
+    - tell me the difference between a closing tag and an opening tag
+    - tell me the difference between opening and closing tag
+    - tell me the difference between an opening and closing tag
+    - tell me the difference between opening tag and closing tag
+    - tell me the difference between an opening tag and a closing tag
+  
+- intent: ask_image_tag
+  examples: |
+    - how do i tag an image
+    - how should i tag an image
+    - tell me the best way to tag an image
+    - what is the proper way to tag images
+    - tell me the best way to tag an image
+    - tell me the correct way to tag an image
+    - what is the correct way to tag an image
+    - which is the correct way to tag an image
+    - how to add an image in html
+  
+- intent: ask_line_break
+  examples: |
+    - how can i create a line break
+    - how can i make a line break in text
+    - how do you create a line break in text
+    - how can i create a line break in text
+    - how do we create a line break in text
+    - how do you produce a line break in text
+    - how to do a line break in a text
+
+- intent: ask_header
+  examples: |
+    - how do you create a header
+    - how do i make a header
+    - how can i make a header
+    - how to make a header
+ 
+- intent: ask_background_color
+  examples: |
+    - how do i add background color to a web page
+    - how do i add background color
+    - how to add background color
+    - how do you add background color
+    - how do we add background color
+    - how do you add a background color
+
+- intent: ask_bold
+  examples: |
+    - how to use bold text
+    - how do i put the text in bold
+    - how can i display the content in bold
+    - how do i show the text in bold
+    - how do i display my text in bold
+    - how can i show content in bold
+    - how do i display content in bold
+
+- intent: ask_italic
+  examples: |
+    - how do i put a text in italic
+    - how do i display a text in italic
+    - how do i display the content in italics
+    - how to use the italic style
+    - how do you display content in italic
+    - how do i display content in italic
+ 
+- intent: ask_hyperlink
+  examples: |
+    - how do i create a hyperlink
+    - how can i create a hyperlink
+    - how can i make a hyperlink
+    - how do i make a hyperlink
+    - how do you make a hyperlink
+
+- intent: ask_tables
+  examples: |
+    - how do i create html tables
+    - how can i create tables
+    - how do we create a table
+    - how do i create a table
+    - how to create a table
+
+- intent: ask_table_row
+  examples: |
+    - what does the <tr> tag do
+    - what does <tr> do
+    - tell me what does <tr> element do
+    - what does the <tr> element do
+    - the <tr> tag what does it do
+
+- intent: ask_table_header
+  examples: |
+    - what does the <th> tag do
+    - what does <th> do
+    - tell me what does <th> element do
+    - what does the <th> element do
+    - the <th> tag what does it do
+
+- intent: ask_table_cell
+  examples: |
+    - what does the <td> tag do
+    - what does <td> do
+    - tell me what does <td> element do
+    - what does the <td> element do
+    - the <td> tag what does it do
+
+- intent: ask_add_row
+  examples: |
+    - how can you add a row to a table
+    - how do you add rows in a table
+    - how do you add a row to a table
+    - how can we add a row to a table
+
+- intent: ask_add_header
+  examples: |
+    - how can you add a header to a table
+    - how do you add headers in a table
+    - how do you add a header to a table
+    - how can we add a header to a table
+
+- intent: ask_add_cell
+  examples: |
+    - how can you add a cell to a table
+    - how do you add cells in a table
+    - how do you add a cell to a table
+    - how can we add a cell to a table
+
+- intent: ask_ordered_list
+  examples: |
+    - what makes a numbered list
+    - how do i make a numbered list
+    - how can i create a numbered list
+    - how can i make a numbered list
+    - how can we make a numbered list
+    - how do you make a numbered list
+
+- intent: ask_unordered_list
+  examples: |
+    - what makes a unordered list
+    - how do i make a unordered list
+    - how can i create a unordered list
+    - how can i make a unordered list
+    - how can we make a unordered list
+    - how do you make a unordered list
+
+- intent: ask_checkbox
+  examples: |
+    - how do i create a checkbox
+    - how do you make a checkbox
+    - how do i make a checkbox
+    - how to make a checkbox
+    - how to create a checkbox
+
+- intent: ask_text_field
+  examples: |
+    - how do i create an input text field
+    - how do i create a text field
+    - how do we create an input text field
+    - how do you create an input text field
+    - how to make an input text field
+
+- intent: ask_drop_down_list
+  examples: |
+    - how do i create a drop-down list
+    - how do you create a drop-down list
+    - how can i create a drop-down list
+    - how do we  create a drop-down list
+
+- intent: ask_video
+  examples: |
+    - how can i add a video file
+    - how do you add a video file
+    - how do i add a video
+    - how do i add a video file
+    - how can we add a video file
+
+- intent: ask_audio
+  examples: |
+    - how can i add a audio file
+    - how do you add a audio file
+    - how do i add a audio
+    - how do i add a audio file
+    - how can we add a audio file
+
+- intent: ask_required
+  examples: |
+    - which attribute is used to specify the requirement to fill out the input field
+    - which attribute is used to specify that an input field must be filled out
+    - what attribute is used to specify that an input field must be used
+    - which attribute is used to specify that an input field has to be filled out
+    - what attribute is used to specify that an input field must be filled out
+    - how to indicate that an input field is obligatory
+    - how can i indicate that an input field is obligatory
+
+- intent: ask_nav
+  examples: |
+    - what does the <nav> tag do
+    - what does <nav> do
+    - what does the <nav> element do
+
+- intent: ask_css
+  examples: |
+    - where does css in html go
+    - where does css go in html
+    - where does the css code goes
+    - where do i put css
+    - in what tag css is added
+    - in which tag do i add css
+
+- intent: ask_javascript
+  examples: |
+    - how can i add javascript zone in a html document
+    - show some ways to add a javascript zone in an html document
+    - how to add a javascript zone in html
+    - how do i add a javascript zone in html
+
+- intent: ask_area
+  examples: |
+    - how do i add an area
+    - how can we add an area
+    - how can i add an area
+    - how do you add an area
+    - how do i add an area
+    - how to add an area
+ 
+- intent: ask_button
+  examples: |
+    - how do i add a button
+    - how can we add a button
+    - how can i add a button
+    - how do you add a button
+    - how do i add a button
+    - how to add a button
+ 
+- intent: ask_caption
+  examples: |
+    - how do i add a caption
+    - how can we add a caption
+    - how can i add a caption
+    - how do you add a caption
+    - how do i add a caption
+    - how to add a caption
+
+- intent: ask_center
+  examples: |
+    - how can i align my text and center it
+    - how to center align text
+    - how can i center align text
+    - how do i center align text
+    - how do you center align text
+  
+- intent: ask_legend
+  examples: |
+    - what does the < legend > tag do
+    - what does < legend > do
+    - tell me what does < legend > element do
+    - what does the < legend > element do
+    - the < legend > tag what does it do
+
+- intent: ask_fieldset
+  examples: |
+    - what does the < fieldset > tag do
+    - what does < fieldset > do
+    - tell me what does < fieldset > element do
+    - what does the < fieldset > element do
+    - the < fieldset > tag what does it do
+ 
+- intent: ask_class
+  examples: |
+    - what is the class attribute
+    - what is a class
+    - what does a class mean
+    - explain what is a class
+    - what is the class attribute in html
+ 
+- intent: ask_i
+  examples: |
+    - what does the < i > tag do
+    - what does < i > do
+    - tell me what does < i > element do
+    - what does the < i > element do
+    - the < i > tag what does it do
+ 
+- intent: ask_big
+  examples: |
+    - what does the < big > tag do
+    - what does < big > do
+    - tell me what does < big > element do
+    - what does the < big > element do
+    - the < big > tag what does it do
+
+- intent: ask_small
+  examples: |
+    - what does the < small > tag do
+    - what does < small > do
+    - tell me what does < small > element do
+    - what does the < small > element do
+    - the < small > tag what does it do
+
+- intent: ask_del
+  examples: |
+    - what does the < del > tag do
+    - what does < del > do
+    - tell me what does < del > element do
+    - what does the < del > element do
+    - the < del > tag what does it do
+
+- intent: ask_mark
+  examples: |
+    - what does the < mark > tag do
+    - what does < mark > do
+    - tell me what does < mark > element do
+    - what does the < mark > element do
+    - the < mark > tag what does it do
+ 
+- intent: ask_head_meaning
+  examples: |
+    - what is the significance of < head >
+    - tell me the meaning of < head >
+    - what does < head > mean
+
+- intent: ask_body_meaning
+  examples: |
+    - what is the significance of < body >
+    - tell me the meaning of < body >
+    - what does < body > mean
+ 
+- intent: ask_cell_spacing
+  examples: |
+    - tell me about cell spacing
+    - what is cell spacing
+    - define cell spacing
+    - explain cell spacing
+
+- intent: ask_cell_pading
+  examples: |
+    - tell me about cell padding
+    - what is cell padding
+    - define cell padding
+    - explain cell padding
+
+- intent: ask_club_rows
+  examples: |
+    - tell me the easiest way to club two rows together
+    - how do i combine two or more rows in one row
+    - how do you join two or more rows in a single row
+    - i want to club two or more rows into one row
+    - how can i group two or more rows into one row
+    - is there a way to move two or more rows into a single row
+    - can we club two or more rows into a single row
+ 
+- intent: ask_club_columns
+  examples: |
+    - how can i combine two or more columns in a single column
+    - how do we combine two or more columns into one column
+    - how can i combine two or more columns into one column
+    - how do you club two or more columns into one column
+    - how can we group two or more columns into one column
+    - how do i group two or more columns into a single column
+    - how can you merge two or more columns into a single column
+ 
+- intent: ask_visibility_hidden
+  examples: |
+    - what happens if we use attribute visibility :hidden
+    - what happens when we use attribute visibility :hidden
+    - what does the attribute visibility :hidden do
+
+- intent: ask_display_none
+  examples: |
+    - what happens if we use attribute display :none
+    - what happens when we use attribute display :none
+    - what does the attribute display :none do
+
+- intent: ask_a
+  examples: |
+    - what does the < a > tag do
+    - what does < a > do
+    - tell me what does < a > element do
+    - what does the < a > element do
+    - the < a > tag what does it do
+ 
+- intent: ask_forms
+  examples: |
+    - what are forms
+    - can you list the forms
+    - define the forms
+    - define html forms
+    - explain what are forms
+ 
+- intent: ask_create_forms
+  examples: |
+    - how do i create a web form
+    - how can i create a form
+    - how do you create form
+    - how can i create a web form
+    - 'how do you create a web form '
+    - how to make forms
+    - how can i create form
+    - how can i create forms
+    - how do i create forms
+
+- intent: ask_figure
+  examples: |
+    - what does the < figure > tag do
+    - what does < figure > do
+    - tell me what does < figure > element do
+    - what does the < figure > element do
+    - the < figure > tag what does it do
+
+- intent: ask_select
+  examples: |
+    - what does the < select > tag do
+    - what does < select > do
+    - tell me what does < select > element do
+    - what does the < select > element do
+    - the < select > tag what does it do
+
+- intent: ask_datalist
+  examples: |
+    - what does the < datalist > tag do
+    - what does < datalist > do
+    - tell me what does < datalist > element do
+    - what does the < datalist > element do
+    - the < datalist > tag what does it do
+
+- intent: ask_semantic_elemnts
+  examples: |
+    - how do semantic elements work
+    - can you list the semantic elements
+    - what are semantic elements
+    - list semantics elemnts
+    - define semantic elements
+    - explain semantic elemnts
+
+- intent: ask_div
+  examples: |
+    - what does the < div > tag do
+    - what does < div > do
+    - tell me what does < div > element do
+    - what does the < div > element do
+    - the < div > tag what does it do
+
+- intent: ask_resize_image
+  examples: |
+    - how do i resize an image
+    - how do i resize my image
+    - how can i resize an image
+    - how do we resize an image
+    - how do you resize an image
+    - how can i resize an image
+    - how to resize an image
+
+- intent: ask_html
+  examples: |
+    - what is html
+    - define html
+    - explain html
+    - what is the meaning of html
+
+- intent: ask_tags_elements
+  examples: |
+    - how different are tags and elements
+    - is there a difference between tags and elements
+    - tell me the difference between an element and a tag
+    - tell me the difference between a tag and an element
+    - tell me the difference between elements and tags
+    - what is difference between elements and tags
+
+- intent: ask_marquee
+  examples: |
+    - what's a marquee
+    - what is a marquee
+    - can you explain to me what is a marquee
+    - descripe a marquee
+
+- intent: ask_html_xhtml
+  examples: |
+    - tell me the difference between html and xhtml
+    - show the differences between html and xhtml
+    - list the differences between html and xhtml
+    - tell me the difference between html and xhtml
+    - what is the difference between html and xhtml
+
+- intent: ask_entity
+  examples: |
+    - what is a html entity
+    - what are html entities
+    - explain html entities
+    - define html entities
+
+- intent: ask_abbr
+  examples: |
+    - what does an <abbr> tag do
+    - what is <abbr>
+    - tell me about the <abbr> tag
+    - what does the <abbr> tag do
+
+- intent: ask_column_size
+  examples: |
+    - how do you set the size of a column
+    - how can i set the size of a column
+    - how do i set the size of a column
+    - how can i set the size of a column
+    - how do you set the size of a column
+    - how do i set the size of a column
+    - how to set the size of a column
+
+- intent: ask_row_height
+  examples: |
+    - how do i change the height of a row
+    - tell me how to change the height of a row
+    - how do i set the height of a row
+    - how do you set the height of a row
+    - how can i set the height of a row
+    - how do i set the height of a specific row
+    - how to set the height of a row
+
+- intent: ask_dl
+  examples: |
+    - tell me about the <dl> tag
+    - what is the <dl> tag
+    - what is the <dl> tag used for
+    - what does the <dl> tag mean
+    - what does a <dl> tag do
+    - what does the tag <dl>  do
+    - what is the <dl> tag 
+    - what does the <dl> tag do

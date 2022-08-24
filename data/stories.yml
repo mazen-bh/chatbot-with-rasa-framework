@@ -1,0 +1,360 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ask_empty_elemnt
+  steps:
+  - intent: ask_empty_elemnt
+  - action: utter_ask_empty_elemnt
+
+- story: ask_closing_element
+  steps:
+  - intent: ask_closing_element
+  - action: utter_ask_closing_element
+
+- story: ask_closing_opening_intent
+  steps:
+  - intent: ask_closing_opening_intent
+  - action: utter_ask_closing_opening_intent
+
+- story: ask_image_intent
+  steps:
+  - intent: ask_image_intent
+  - action: utter_ask_image_intent
+
+- story: ask_line_break
+  steps:
+  - intent: ask_line_break
+  - action: utter_ask_line_break
+
+- story: ask_header
+  steps:
+  - intent: ask_header
+  - action: utter_ask_header
+
+- story: ask_background_color
+  steps:
+  - intent: ask_background_color
+  - action: utter_ask_background_color
+
+- story: ask_bold
+  steps:
+  - intent: ask_bold
+  - action: utter_ask_bold
+
+- story: ask_italic
+  steps:
+  - intent: ask_italic
+  - action: utter_ask_italic
+
+- story: ask_hyperlink
+  steps:
+  - intent: ask_hyperlink
+  - action: utter_ask_hyperlink
+
+- story: ask_tables
+  steps:
+  - intent: ask_tables
+  - action: utter_ask_tables
+
+- story: ask_table_row
+  steps:
+  - intent: ask_table_row
+  - action: utter_ask_table_row
+
+- story: ask_table_header
+  steps:
+  - intent: ask_table_header
+  - action: utter_ask_table_header
+
+- story: ask_table_cell
+  steps:
+  - intent: ask_table_cell
+  - action: utter_ask_table_cell
+
+- story: ask_add_row
+  steps:
+  - intent: ask_add_row
+  - action: utter_ask_add_row
+
+- story: ask_add_header
+  steps:
+  - intent: ask_add_header
+  - action: utter_ask_add_header
+
+- story: ask_add_cell
+  steps:
+  - intent: ask_add_cell
+  - action: utter_ask_add_cell
+
+- story: ask_ordered_list
+  steps:
+  - intent: ask_ordered_list
+  - action: utter_ask_ordered_list
+
+- story: ask_unordered_list
+  steps:
+  - intent: ask_unordered_list
+  - action: utter_ask_unordered_list
+
+- story: ask_checkbox
+  steps:
+  - intent: ask_checkbox
+  - action: utter_ask_checkbox
+
+- story: ask_text_field
+  steps:
+  - intent: ask_text_field
+  - action: utter_ask_text_field
+
+- story: ask_drop_down_list
+  steps:
+  - intent: ask_drop_down_list
+  - action: utter_ask_drop_down_list
+
+- story: ask_video
+  steps:
+  - intent: ask_video
+  - action: utter_ask_video
+
+- story: ask_audio
+  steps:
+  - intent: ask_audio
+  - action: utter_ask_audio
+
+- story: ask_required
+  steps:
+  - intent: ask_required
+  - action: utter_ask_required
+
+- story: ask_nav
+  steps:
+  - intent: ask_nav
+  - action: utter_ask_nav
+
+- story: ask_css
+  steps:
+  - intent: ask_css
+  - action: utter_ask_css
+
+- story: ask_javascript
+  steps: 
+  - intent: ask_javascript
+  - action: utter_ask_javascript
+
+- story: ask_area
+  steps:
+  - intent: ask_area
+  - action: utter_ask_area
+
+- story: ask_button
+  steps:
+  - intent: ask_button
+  - action: utter_ask_button
+
+- story: ask_caption
+  steps:
+  - intent: ask_caption
+  - action: utter_ask_caption
+
+- story: ask_center
+  steps:
+  - intent: ask_center
+  - action: utter_ask_center
+
+- story: ask_legend
+  steps:
+  - intent: ask_legend
+  - action: utter_ask_legend
+
+- story: ask_fieldset
+  steps:
+  - intent: ask_fieldset
+  - action: utter_ask_fieldset
+
+- story: ask_class
+  steps:
+  - intent: ask_class
+  - action: utter_ask_class
+
+- story: ask_i
+  steps:
+  - intent: ask_i
+  - action: utter_ask_i
+
+- story: ask_big
+  steps:
+  - intent: ask_big
+  - action: utter_ask_big
+
+- story: ask_small
+  steps:
+  - intent: ask_small
+  - action: utter_ask_small
+
+- story: ask_del
+  steps:
+  - intent: ask_del
+  - action: utter_ask_del
+
+- story: ask_mark
+  steps:
+  - intent: ask_mark
+  - action: utter_ask_mark
+
+- story: ask_head_meaning
+  steps:
+  - intent: ask_head_meaning
+  - action: utter_ask_head_meaning
+
+- story: ask_body_meaning
+  steps:
+  - intent: ask_body_meaning
+  - action: utter_ask_body_meaning
+
+- story: ask_cell_spacing
+  steps:
+  - intent: ask_cell_spacing
+  - action: utter_ask_cell_spacing
+
+- story: ask_cell_pading
+  steps:
+  - intent: ask_cell_pading
+  - action: utter_ask_cell_pading
+
+- story: ask_club_rows
+  steps:
+  - intent: ask_club_rows
+  - action: utter_ask_club_rows
+
+- story: ask_club_columns
+  steps:
+  - intent: ask_club_columns
+  - action: utter_ask_club_columns
+
+- story: ask_visibility_hidden
+  steps:
+  - intent: ask_visibility_hidden
+  - action: utter_ask_visibility_hidden
+
+- story: ask_display_none
+  steps:
+  - intent: ask_display_none
+  - action: utter_ask_display_none
+
+- story: ask_a
+  steps:
+  - intent: ask_a
+  - action: utter_ask_a
+
+- story: ask_forms
+  steps:
+  - intent: ask_forms
+  - action: utter_ask_forms
+
+- story: ask_create_forms
+  steps:
+  - intent: ask_create_forms
+  - action: utter_ask_create_forms
+
+- story: ask_figure
+  steps:
+  - intent: ask_figure
+  - action: utter_ask_figure
+
+- story: ask_select
+  steps:
+  - intent: ask_select
+  - action: utter_ask_select
+
+- story: ask_datalist
+  steps:
+  - intent: ask_datalist
+  - action: utter_ask_datalist
+
+- story: ask_semantic_elemnts
+  steps:
+  - intent: ask_semantic_elemnts
+  - action: utter_ask_semantic_elemnts
+
+- story: ask_div
+  steps:
+  - intent: ask_div
+  - action: utter_ask_div
+
+- story: ask_resize_image
+  steps:
+  - intent: ask_resize_image
+  - action: utter_ask_resize_image
+
+- story: ask_html
+  steps:
+  - intent: ask_html
+  - action: utter_ask_html
+
+- story: ask_intents_elements
+  steps:
+  - intent: ask_intents_elements
+  - action: utter_ask_intents_elements
+
+- story: ask_marquee
+  steps:
+  - intent: ask_marquee
+  - action: utter_ask_marquee
+
+- story: ask_html_xhtml
+  steps:
+  - intent: ask_html_xhtml
+  - action: utter_ask_html_xhtml
+
+- story: ask_entity
+  steps:
+  - intent: ask_entity
+  - action: utter_ask_entity
+
+- story: ask_abbr
+  steps:
+  - intent: ask_abbr
+  - action: utter_ask_abbr
+
+- story: ask_column_size
+  steps:
+  - intent: ask_column_size
+  - action: utter_ask_column_size
+
+- story: ask_row_height
+  steps:
+  - intent: ask_row_height
+  - action: utter_ask_row_height
+  
+- story: ask_dl
+  steps:
+  - intent: ask_dl
+  - action: utter_ask_dl

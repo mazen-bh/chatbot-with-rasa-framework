@@ -1,0 +1,353 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_what_are_you
+  - ask_thanks
+  - ask_options
+  - ask_empty_elemnt
+  - ask_closing_element
+  - ask_closing_opening_intent
+  - ask_image_intent
+  - ask_line_break
+  - ask_header
+  - ask_background_color
+  - ask_bold
+  - ask_italic
+  - ask_hyperlink
+  - ask_tables
+  - ask_table_row
+  - ask_table_header
+  - ask_table_cell
+  - ask_add_row
+  - ask_add_header
+  - ask_add_cell
+  - ask_ordered_list
+  - ask_unordered_list
+  - ask_checkbox
+  - ask_text_field
+  - ask_drop_down_list
+  - ask_video
+  - ask_audio
+  - ask_required
+  - ask_nav
+  - ask_css
+  - ask_javascript
+  - ask_area
+  - ask_button
+  - ask_caption
+  - ask_center
+  - ask_legend
+  - ask_fieldset
+  - ask_class
+  - ask_i
+  - ask_big
+  - ask_small
+  - ask_del
+  - ask_mark
+  - ask_head_meaning
+  - ask_body_meaning
+  - ask_cell_spacing
+  - ask_cell_pading
+  - ask_club_rows
+  - ask_club_columns
+  - ask_visibility_hidden
+  - ask_display_none
+  - ask_a
+  - ask_forms
+  - ask_create_forms
+  - ask_figure
+  - ask_select
+  - ask_datalist
+  - ask_semantic_elemnts
+  - ask_div
+  - ask_resize_image
+  - ask_html
+  - ask_intents_elements
+  - ask_marquee
+  - ask_html_xhtml
+  - ask_entity
+  - ask_abbr
+  - ask_column_size
+  - ask_row_height
+  - ask_dl
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Freelance provider."
+
+  utter_ask_what_are_you:
+  - text: "Hi, I'm  BoTrainer"
+     
+  utter_ask_thanks:
+  - text: "Happy to help!" 
+     
+  utter_ask_options:
+  - text: "I can answer your questions and clear your misunderstandings"
+    
+  utter_ask_empty_elemnt:
+  - text: "Empty element"
+     
+  utter_ask_closing_element:
+  - text: "Closing element"
+      
+  utter_ask_closing_opening_intent:
+  - text: "Closing intent has a / in front"
+      
+  utter_ask_image_intent:
+  - text: " &lt img src='image' alt='MyImage' &gt "
+      
+  utter_ask_line_break:
+  - text: "with the &lt br &gt intent"
+      
+  utter_ask_header:
+  - text: "The &lth1&gt to &lth6&gt intents are used to define HTML headings.&lth1&gt defines
+      the most important heading. &lth6&gt defines the least important heading"
+      
+  utter_ask_background_color:
+  - text: " &ltbody style='background-color:choose a color;'&gt" 
+      
+  utter_ask_bold:
+  - text: " with the &lt strong &gt intent"
+      
+  utter_ask_italic:
+  - text: "with the &lt em &gt intent"
+       
+  utter_ask_hyperlink:
+  - text: " &lta href='http://www.example.com'&gtname&lt/a&gt "
+        
+  utter_ask_tables:
+  - text: "The &lttable&gt intent defines an HTML table"
+       
+  utter_ask_table_row:
+  - text: "The &lttr&gt element defines a table row"
+     
+  utter_ask_table_header:
+  - text: "the &ltth&gt element defines a table header"
+    
+  utter_ask_table_cell:
+  - text: "the &lttd&gt element defines a table cell"
+      
+  utter_ask_add_row:
+  - text: "&lttr&gt  &lt/tr&gt"
+
+  utter_ask_add_header:
+  - text: "&ltth&gt &lt/th&gt"
+       
+  utter_ask_add_cell:
+  - text: "&lttd&gt &lt/td&gt"
+     
+  utter_ask_ordered_list:
+  - text: "&ltol&gt     &lt/ol&gt"
+    
+  utter_ask_unordered_list:
+  - text: "&ltul&gt     &lt/ul&gt"
+    
+  utter_ask_checkbox:
+  - text: "&ltinput type='checkbox'&gt "
+     
+  utter_ask_text_field:
+  - text: " &ltinput type='text'&gt "
+    
+  utter_ask_drop_down_list:
+  - text: "with &ltselect&gt and here is an example  &ltselect name='cars' id='cars'&gt  &ltoption
+      value='audi'&gtAudi &lt/option&gt  &lt/select&gt"
+    
+  utter_ask_video:
+  - text: "&ltvideo&gt"
+    
+  utter_ask_audio:
+  - text: "&ltaudio&gt"
+
+  utter_ask_required:
+  - text: "with the required attribute"
+      
+  utter_ask_nav:
+  - text: "The &ltnav&gt HTML element represents a section of a page whose purpose is to
+      provide navigation links"
+       
+  utter_ask_css:
+  - text: "CSS goes inside the &ltbody&gt element"
+     
+  utter_ask_javascript:
+  - text: "&ltscript src='..folder_name/file_name.js'&gt&lt/script&gt"
+     
+  utter_ask_area:
+  - text: "The &ltarea&gt intent defines an area inside an image map"
+     
+  utter_ask_button:
+  - text: "&ltbutton type='button'&gtClick Me!&lt/button&gt"
+      
+  utter_ask_caption:
+  - text: "The &ltcaption&gt intent defines a table caption it must be inserted immediately
+      after the &lttable&gt intent"
+      
+  utter_ask_center:
+  - text: "with &ltcenter&gt intent"
+     
+  utter_ask_legend:
+  - text: "The &ltlegend&gt intent defines a caption for the &ltfieldset&gt element"
+     
+  utter_ask_fieldset:
+  - text: "The &ltfieldset&gt HTML element is used to group several controls as well as labels
+      (&ltlabel&gt) within a web form"
+     
+  utter_ask_class:
+  - text: "The class attribute is used to specify the class name for an HTML element. Multiple
+      elements in HTML can have the same class value. Also, it is mainly used to associate
+      the styles written in the stylesheet with the HTML elements"
+     
+  utter_ask_i:
+  - text: "makes text italic"
+      
+  utter_ask_big:
+  - text: "increases the font size of the text by one unit"
+      
+  utter_ask_small:
+  - text: "decreases the font size of the text by one unit"
+    
+  utter_ask_del:
+  - text: "displays as strike out text"
+     
+  utter_ask_mark:
+  - text: "highlights the text"
+    
+  utter_ask_head_meaning:
+  - text: "&lthead&gt intent provides the information about the document. It should always
+      be enclosed in the &lthtml&gt intent. This intent contains the metadata about the webpage
+      and the intents which are enclosed by head intent like &ltlink&gt, &ltmeta&gt, &ltstyle&gt,
+      &ltscript&gt, etc"
+    
+  utter_ask_body_meaning:
+  - text: "&ltbody&gt intent defines the body of the HTML document. It should always be enclosed
+      in the &lthtml&gt intent. All the contents which needs to be displayed on the web
+      page like images, text, audio, video, contents, using elements like &ltp&gt, &ltimg&gt,
+      &ltaudio&gt, &ltheading&gt, &ltvideo&gt, &ltdiv&gt, etc."
+    
+  utter_ask_cell_spacing:
+  - text: "Cell Spacing is the space or gap between two consecutive cells."  
+    
+  utter_ask_cell_pading:
+  - text: "Cell Padding is the space or gap between the text/ content of the cell and the
+      edge/ border of the cell."
+      
+  utter_ask_club_rows:
+  - text: "rowspan.  &ltth rowspan='2'&gtName&lt/th&gt"
+    
+  utter_ask_club_columns:
+  - text: "colspan . &ltth colspan='2'&gtName&lt/th&gt"
+    
+  utter_ask_visibility_hidden:
+  - text: "When we use the attribute visibility hidden for an HTML element then that element
+      will be hidden from the webpage but still takes up space"
+    
+  utter_ask_display_none:
+  - text: "if we use the display none attribute for an HTML element then the element will
+      be hidden, and also it won't take up any space on the webpage"
+    
+  utter_ask_a:
+  - text: "The anchor intent &lta&gt is used to create a hyperlink to another webpage or to
+      a certain part of the webpage and these links are clickable"
+      
+  utter_ask_forms:
+  - text: "The HTML form is used to collect the user inputs. HTML provides a &ltform&gt intent
+      to create forms. To take input from the user we use the &ltinput&gt intent inside
+      the form so that all collected user data can be sent to the server for processing"
+      
+  utter_ask_create_forms:
+  - text: "&ltform action='/submit_data.php'&gt &lt/form&gt"
+      
+  utter_ask_figure:
+  - text: "The &ltfigure&gt intent specifies the self-contained content, like diagrams, images,
+      code snippets, etc. &ltfigure&gt intent is used to semantically organize the contents
+      of an image like image, image caption, etc."
+      
+  utter_ask_select:
+  - text: "In the case of &ltselect&gt intent a user will have to choose from a list of options"  
+    
+  utter_ask_datalist:
+  - text: "&ltdatalist&gt when used along with the &ltinput&gt intent provides a suggestion
+      that the user selects one of the options given or can enter some entirely different
+      value"
+     
+  utter_ask_semantic_elemnts:
+  - text: "Semantic elements are those which describe the particular meaning to the browser
+      and the developer. Elements like &ltform&gt, &lttable&gt, &ltarticle&gt, &ltfigure&gt,
+      etc"
+      
+  utter_ask_div:
+  - text: "To logically divide the document"
+      
+  utter_ask_resize_image:
+  - text: "Using height and width"
+     
+  utter_ask_html:
+  - text: "HTML stands for Hyper Text Markup Language. It is a language of the World Wide
+      Web. It is a standard text formatting language which is used to create and display
+      pages on the Web. HTML makes the text more interactive and dynamic. It can turn
+      text into images, tables, links. HTML pages are saved by adding .html or .html
+      in web page name." 
+    
+  utter_ask_intents_elements:
+  - text: "The element is an individual component of the HTML web page or document. It represents
+      semantics or meaning. For example, the title element represents the title of the
+      document.and intents are the root of the HTML document which is used to specify that
+      the document is HTML. For example, the Head intent is used to contain all the head
+      element in the HTML file."
+      
+  utter_ask_marquee:
+  - text: "Marquee is used for the scrolling text on a web page. It scrolls the image or
+      text up, down, left or right automatically. You should put the text which you
+      want to scroll within the &ltmarquee&gt   &lt/marquee&gt intent."
+  
+  utter_ask_html_xhtml:
+  - text: " The differences between HTML and XHTML are
+      HTML is an application of Standard Generalized Markup Language. Whereas, XML is an application of Extensible Markup Language.
+      The first one is a static Web Page whereas the later one is a dynamic Web Page.
+      HTML allows programmer to perform changes in the intents and use attribute minimization whereas XHTML when user need a new markup intent then user can define it
+      .html is about displaying information whereas XHTML is about describing the information."
+       
+  utter_ask_entity:
+  - text: "In HTML some characters are reserved like ,&lt,&gt, /etc. To use these characters
+      in our webpage we need to use the character entities called HTML Entities. Below
+      are a few mapping between the reserved character and its respective entity character
+      to be used."
+   
+  utter_ask_abbr:
+  - text: "Defines an abbreviation or acronym"
+
+  utter_ask_column_size:
+  - text: "&lttable style='width:100%'&gt"
+    
+  utter_ask_row_height:
+  - text: "&lttr style='height:200px'&gt"
+     
+  utter_ask_dl:
+  - text: "The &ltdl&gt intent defines the description list"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
